@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DF DEPORTES</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <a class="brand" href="index.html">DF <span>DEPORTES</span></a>
+      <p>Todo lo que necesitás para darlo todo</p>
+    </div>
+    <div class="header-right">
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <button id="cartToggle" class="cart-btn" type="button">
+        Carrito (<span id="cartCount">0</span>)
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">EQUIPATE. ENTRENÁ. SUPERATE.</p>
+        <h1>Tu próximo gran logro <span>empieza acá.</span></h1>
+        <p>Encontrá el equipamiento ideal para moverte, entrenar y disfrutar cada deporte.</p>
+        <a class="hero-link" href="#boxproductos">
+          Explorar productos <span aria-hidden="true">↓</span>
+        </a>
+      </div>
+      <div class="hero-badge" aria-label="Deporte para todos">
+        <span>ACTITUD</span>
+        <strong>ON</strong>
+        <span>TODO EL DÍA</span>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">NUESTRO CATÁLOGO</p>
+          <h2>Encontrá tu próximo favorito</h2>
+        </div>
+        <p>Calidad y energía para cada desafío.</p>
+      </div>
+      <div id="boxproductos">
+        <p>Cargando productos...</p>
+      </div>
+    </section>
+  </main>
+
+  <aside id="cartPanel">
+    <div class="cart-header">
+      <h2>Tu carrito</h2>
+      <button id="closeCart" class="close-cart" type="button">Cerrar</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <p>Total: $<span id="cartTotal">0</span></p>
+      <button id="checkoutBtn" class="checkout-btn" type="button">Finalizar compra</button>
+    </div>
+  </aside>
+
+  <footer id="contacto">
+    <a class="brand" href="index.html">DF <span>DEPORTES</span></a>
+    <p>Av. Siempre Viva 550</p>
+    <p>+54 9 351 3325737</p>
+  </footer>
+
+  <script type="module" src="cargarproductos.js"></script>
+</body>
+</html>
